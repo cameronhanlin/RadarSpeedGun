@@ -24,10 +24,11 @@ public class Vehicle implements Mover{
     @Override
     public double move(){
         speed = 60;
-        System.out.println("The vehicle is moving at a default speed of "+speed);
+        System.out.println("The vehicle is now moving at a default speed of "+speed);
         return speed;
     }
 
+    @Override
     public void outputDetails(){
         System.out.println("This vehicle has "+numWheels+" wheels, and is moving at "+speed+".");
     }

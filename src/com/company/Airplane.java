@@ -11,10 +11,11 @@ public class Airplane extends Vehicle implements Mover{
     @Override
     public double move(){
         setSpeed(500);
-        System.out.println("The airplane is moving at "+getSpeed());
+        System.out.println("The airplane is now moving at "+getSpeed());
         return getSpeed();
     }
 
+    @Override
     public void outputDetails(){
         super.outputDetails();
         System.out.println("This plane has wings? "+hasWings);

@@ -11,10 +11,11 @@ public class Dog extends Animal implements Mover{
     @Override
     public double move(){
         setSpeed(15);
-        System.out.println("The dog is moving at "+getSpeed());
+        System.out.println("The dog is now moving at "+getSpeed());
         return getSpeed();
     }
 
+    @Override
     public void outputDetails(){
         super.outputDetails();
         System.out.println("This dog can bark? "+canBark);

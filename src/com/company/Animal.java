@@ -25,10 +25,11 @@ public class Animal implements Mover{
     @Override
     public double move(){
         speed = 10;
-        System.out.println("The animal is moving at a default speed of "+speed);
+        System.out.println("The animal is now moving at a default speed of "+speed);
         return speed;
     }
 
+    @Override
     public void outputDetails(){
         System.out.println("This animal has "+numLegs+" legs, and is moving at "+speed+".");
     }

@@ -23,6 +23,26 @@ public class Main {
                     the superclass of all classes (ie, in the example stated above, both Animal and Vehicle would extend Mover)?
 
          */
+        RadarSpeedGun speedGun = new RadarSpeedGun();
+
+        Animal animal1 = new Animal(4);
+        Dog dog1 = new Dog(4,true);
+        Vehicle vehicle1 = new Vehicle(6);
+        Airplane airplane1 = new Airplane(10,true);
+
+
+        speedGun.makeItMove(animal1);
+        speedGun.makeItMove(dog1);
+        speedGun.makeItMove(vehicle1);
+        speedGun.makeItMove(airplane1);
+
+        System.out.println(" ");
+
+
+
+        speedGun.outputDetails();
+        System.out.println("Total Speed "+speedGun.getTotalSpeed());
+
 
 
 
